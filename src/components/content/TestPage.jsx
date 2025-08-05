@@ -2,10 +2,12 @@ import { useEffect, useRef, useState } from 'react'
 import React from 'react';
 import { Button, Navbar, Nav, Container } from 'react-bootstrap';
 
+
 /*The page that will be the proof of concept for the functions. Right now, it only tests the
 disappearing text function, and not even it being set or not set by a user, just a proof that
-the idea can work. */
+the idea can work. TODO, update this to use tiptap method*/
 export default function TestPage() {
+
     //a state variable that determines if text is being shown. Written so that the text is gone even on page reload. If possible,
     //I want to store the changes in someones account as well (if the user aka the writer wants it to be that permanent)
     const [showText, setShowText] = useState(() => {

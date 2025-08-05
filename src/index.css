@@ -1,0 +1,22 @@
+.editor-container .ProseMirror {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 8px;
+  min-height: 300px;
+  outline: none;
+  white-space: pre-wrap;
+}
+/*author-only visual tags  */
+[data-is-author="true"] .disappear-text[data-author]::before {
+  content: "<disappear>";
+  font-style: italic;
+  opacity: .6;
+  margin-right: .15em;
+}
+
+[data-is-author="true"] .disappear-text[data-author]::after {
+  content: "</disappear>";
+  font-style: italic;
+  opacity: .6;
+  margin-left: .15em;
+}

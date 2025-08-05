@@ -1,0 +1,28 @@
+I created the framework for this app using npx create-react-app my-react-app. create-react-app is the actual part that makes the structure of the app. my-react-app could have been renamed.
+Never mind that was wrong, because it creates the react app using create react app (go figure) instead of vite, which is what we usually use.
+So I instead ran
+ npm create vite@latest .
+And choose:
+o  Package name:
+|  project
+|
+o  Select a framework:
+|  React
+|
+*  Select a variant:
+Javascript (no SWC)
+
+React router was an option for variants, but I think I will just import that later.
+
+I then just copied the folder setup in src from hw6, but they might not all be used.
+
+Make sure that, in the future, when you are creating a new react app that you install any libraries you need with npm.
+For example its not enough to just import bootstrap. You need to actually install it using npm install bootstrap and npm
+install react bootstrap. This then puts those in your package.json, so that when you run npm install by itself on a new
+computer, it automatically installs it for you. This is why you didnt need to do this for your hws, it was all taken care
+of by npm install.
+Also need to do it for stuff like react router.
+
+Okay so I did a bit of work on the text editor, before realizing that using a rich text editor framework would be better,
+rather than just creating everything myself. So, I am using tiptap, and will see how it goes. I did
+npm install @tiptap/react @tiptap/pm @tiptap/starter-kit
